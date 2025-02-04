@@ -46,6 +46,37 @@
     .about {
       font-size: 18px;
     }
+
+     /* Container to position text over image */
+     .image-container {
+      position: relative;
+      width: 100%; /* Adjust as needed */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Image styling */
+    .image-container img {
+      /* width: 100%; */
+      /* height: 100%; */
+      object-fit: cover; /* Ensures the image covers the container */
+    }
+
+    /* Text styling */
+    .image-container h3 {
+      position: absolute; /* Positions text over the image */
+      top: 50%; /* Centers vertically */
+      left: 50%; /* Centers horizontally */
+      transform: translate(-50%, -50%); /* Perfectly centers the text */
+      color: gold; /* Golden color */
+      font-size: 20px; /* Adjust size as needed */
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
+      text-align: center;
+      z-index: 2; /* Ensures text is above the image */
+    }
+
   </style>
 </head>
 <body>
@@ -82,6 +113,17 @@
 
   <!-- Main Content -->
   <main class="container my-4">
+    
+    <div class="image-container">
+      <!-- Image -->
+      <img src="images/winner.gif" alt="Golden Celebration" width="100%" height="100%" class="d-inline-block align-text-top">
+  
+      <!-- Optional Overlay -->
+      <div class="overlay"></div>
+  
+      <!-- Text -->
+      <h3>Karna</h3>
+    </div>
 
     <!-- About Section -->
     <section id="about">
@@ -122,7 +164,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>Interns</td>
+            <td>Interns - Chhaava</td>
             <td></td>
           </tr>
         </tbody>
@@ -143,7 +185,7 @@
               <th>Aarambh</th>
               <th>Shiledar</th>
               <th>Karna</th>
-              <th>Interns</th>
+              <th>Chhaava</th>
             </tr>
           </thead>
           <tbody>
